@@ -1,6 +1,6 @@
 {
   "name": "@synterra/shared",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Nest - empty template to create lib",
   "author": "Hugo Blanc",
   "license": "MIT",
@@ -23,7 +23,7 @@
     "@nestjs/common": "8.0.6",
     "@nestjs/core": "8.0.6",
     "@nestjs/platform-express": "8.0.6",
-    "@synterra/spinal-rxjs": "^0.1.0",
+    "@synterra/spinal-rxjs": "^0.1.2",
     "@types/node": "16.0.0",
     "@typescript-eslint/eslint-plugin": "4.30.0",
     "@typescript-eslint/parser": "4.30.0",

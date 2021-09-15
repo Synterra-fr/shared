@@ -1,14 +1,12 @@
 import { Injectable } from '@nestjs/common';
-import {
-  AbstractHubRepository,
-  SpinalHubRepository,
-} from '@synterra/spinal-rxjs';
+import { HubRepository, SpinalHubRepository } from '@synterra/spinal-rxjs';
+
 import { SpinalService } from '../../spinal/hub/spinal.service';
 import { AvgTimingModel } from './avg-timing.model';
 
-@SpinalHubRepository('avg-past-timing')
+@SpinalHubRepository('avg-daily-timing')
 @Injectable()
-export class AvgTimingHubRepository extends AbstractHubRepository<AvgTimingModel> {
+export class AvgDailyTimingHubRepository extends HubRepository<AvgTimingModel> {
   protected get emptyNode(): AvgTimingModel {
     return new AvgTimingModel();
   }
